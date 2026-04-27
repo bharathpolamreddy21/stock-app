@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: stockroomfrontend
+  namespace: stockapp
+spec:
+  replicas: 2
+  selector:
+    matchLabels: 
+      app: stockroom-ui
+  template:
+    metadata:
+      labels: 
+        app: stockroom-ui
+    spec:
+      containers: 
+        - name: nginx-app
+          image: login-ui:v2
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 80

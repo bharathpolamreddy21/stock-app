@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: configfile
+  namespace: stockapp
+data:
+  DB_HOST: my-postgres-db.c4zuk6e2waw3.us-east-1.rds.amazonaws.com
+  DB_PORT: "5432"
+  DB_NAME: postgres
+  SERVER_PORT: "8080"
+  UPLOAD_PATH: /tmp/stockroom/uploads
+  MAX_FILE_SIZE_MB: "10"
+  WT_EXPIRY_HOURS: "24"
+  EXCHANGE_API_URL: https://v6.exchangerate-api.com/v6
+  EXCHANGE_API_KEY: 0b228fcf9bb8063ed1c6c44a
+  EXCHANGE_CACHE_TTL_SECONDS: "60"
+  EXCHANGE_DEFAULT_BASE: USD
+  PAGINATION_DEFAULT_SIZE: "12"
+  LOG_LEVEL: INFO
+  DB_USERNAME: postgres
+
+ 

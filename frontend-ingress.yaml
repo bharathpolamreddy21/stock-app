@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: stockroom-frontend-ingress
+  namespace: stockapp
+spec:
+  rules:
+    - host: stockroom.local
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: stockapp-frontend-service
+                port:
+                  number: 80
