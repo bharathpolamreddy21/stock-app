@@ -15,7 +15,7 @@ spec:
     spec:
       containers: 
         - name: nginx-app
-          image: login-ui:v1
+          image: 557809208863.dkr.ecr.us-east-1.amazonaws.com/stockapp/frontend:v1
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 80
