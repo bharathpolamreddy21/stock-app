@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
        - name: java-app
-         image: 557809208863.dkr.ecr.us-east-1.amazonaws.com/stockapp/backend
+         image: 557809208863.dkr.ecr.us-east-1.amazonaws.com/stockapp/backend:v1
          imagePullPolicy: IfNotPresent
 
          envFrom:
