@@ -15,7 +15,7 @@ spec:
     spec:
       containers: 
         - name: nginx-app
-          image: login-ui:v2
+          image: login-ui:v1
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 80

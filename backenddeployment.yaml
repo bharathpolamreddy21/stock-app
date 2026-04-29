@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
        - name: java-app
-         image: stockapp:v8
+         image: backendstock:v1
          imagePullPolicy: IfNotPresent
 
          envFrom:
